@@ -1,0 +1,1100 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>9178砰砰砰我家弟弟超级棒 - 创意视频,记录每一个高光时刻</title>
+<meta name="description" content="9178砰砰砰我家弟弟超级棒，一个专注创意短视频与成长记录的视频品牌官网，用镜头捕捉每一次砰然心动的高光瞬间。">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+:root{
+  --bg:#0a0a12;
+  --bg2:#10101c;
+  --card:#16162a;
+  --card2:#1c1c34;
+  --line:rgba(255,255,255,.08);
+  --txt:#f2f2f7;
+  --sub:#9a9ab5;
+  --c1:#ff3d7f;
+  --c2:#ffb03a;
+  --c3:#5b6cff;
+  --c4:#2ee6a8;
+  --grad:linear-gradient(120deg,#ff3d7f 0%,#ffb03a 55%,#2ee6a8 100%);
+}
+html{scroll-behavior:smooth}
+body{
+  font-family:"PingFang SC","Hiragino Sans GB","Microsoft YaHei",-apple-system,sans-serif;
+  background:var(--bg);
+  color:var(--txt);
+  line-height:1.75;
+  overflow-x:hidden;
+  -webkit-font-smoothing:antialiased;
+}
+a{color:inherit;text-decoration:none}
+img{max-width:100%;display:block}
+::selection{background:var(--c1);color:#fff}
+
+/* ============ 顶部导航 ============ */
+.nav{
+  position:fixed;top:0;left:0;right:0;z-index:100;
+  display:flex;align-items:center;justify-content:space-between;
+  padding:18px 5vw;
+  background:rgba(10,10,18,.55);
+  backdrop-filter:blur(18px);
+  -webkit-backdrop-filter:blur(18px);
+  border-bottom:1px solid var(--line);
+  transition:padding .3s;
+}
+.nav.small{padding:12px 5vw}
+.logo{display:flex;align-items:center;gap:12px;font-weight:800;font-size:20px;letter-spacing:.5px}
+.logo .dot{
+  width:38px;height:38px;border-radius:12px;
+  background:var(--grad);
+  display:grid;place-items:center;
+  font-size:14px;color:#0a0a12;font-weight:900;
+  box-shadow:0 6px 24px rgba(255,61,127,.4);
+  animation:pulse 3s infinite;
+}
+@keyframes pulse{
+  0%,100%{transform:scale(1)}
+  50%{transform:scale(1.08)}
+}
+.logo small{display:block;font-size:10px;color:var(--sub);font-weight:400;letter-spacing:2px}
+.menu{display:flex;gap:34px;font-size:15px;color:var(--sub)}
+.menu a{position:relative;transition:color .25s;padding:4px 0}
+.menu a::after{
+  content:"";position:absolute;left:0;bottom:-4px;height:2px;width:0;
+  background:var(--grad);transition:width .3s;border-radius:2px;
+}
+.menu a:hover{color:var(--txt)}
+.menu a:hover::after{width:100%}
+.nav-cta{
+  padding:10px 24px;border-radius:999px;
+  background:var(--grad);color:#0a0a12;font-weight:700;font-size:14px;
+  box-shadow:0 8px 26px rgba(255,61,127,.35);
+  transition:transform .25s;
+}
+.nav-cta:hover{transform:translateY(-2px)}
+.hamburger{display:none;font-size:26px;cursor:pointer;color:var(--txt);background:none;border:none}
+
+/* ============ Hero ============ */
+.hero{
+  position:relative;
+  min-height:100vh;
+  display:flex;align-items:center;
+  padding:140px 5vw 80px;
+  overflow:hidden;
+}
+.hero-bg{
+  position:absolute;inset:0;z-index:0;
+  background:
+    radial-gradient(circle at 15% 20%,rgba(255,61,127,.22),transparent 45%),
+    radial-gradient(circle at 85% 30%,rgba(91,108,255,.22),transparent 45%),
+    radial-gradient(circle at 50% 90%,rgba(46,230,168,.14),transparent 45%);
+}
+.hero-grid{
+  position:absolute;inset:0;z-index:0;opacity:.4;
+  background-image:linear-gradient(var(--line) 1px,transparent 1px),linear-gradient(90deg,var(--line) 1px,transparent 1px);
+  background-size:80px 80px;
+  mask-image:radial-gradient(circle at 50% 40%,#000 20%,transparent 75%);
+  -webkit-mask-image:radial-gradient(circle at 50% 40%,#000 20%,transparent 75%);
+}
+.hero-inner{position:relative;z-index:2;max-width:1320px;margin:0 auto;width:100%;display:grid;grid-template-columns:1.1fr .9fr;gap:60px;align-items:center}
+.badge{
+  display:inline-flex;align-items:center;gap:8px;
+  padding:8px 18px;border-radius:999px;
+  background:rgba(255,61,127,.12);
+  border:1px solid rgba(255,61,127,.35);
+  font-size:13px;color:#ff8ab4;font-weight:600;margin-bottom:26px;
+}
+.badge i{width:7px;height:7px;border-radius:50%;background:var(--c1);animation:blink 1.5s infinite}
+@keyframes blink{0%,100%{opacity:1}50%{opacity:.25}}
+h1{
+  font-size:clamp(40px,5.4vw,78px);
+  line-height:1.1;
+  font-weight:900;
+  letter-spacing:-1px;
+  margin-bottom:26px;
+}
+h1 .g{
+  background:var(--grad);
+  -webkit-background-clip:text;background-clip:text;
+  -webkit-text-fill-color:transparent;
+}
+.hero p.lead{
+  font-size:18px;color:var(--sub);max-width:560px;margin-bottom:38px;
+}
+.hero p.lead b{color:var(--txt);font-weight:600}
+.btns{display:flex;gap:16px;flex-wrap:wrap}
+.btn{
+  padding:15px 34px;border-radius:999px;font-weight:700;font-size:16px;
+  display:inline-flex;align-items:center;gap:10px;
+  transition:transform .25s,box-shadow .25s;
+  cursor:pointer;border:none;
+}
+.btn.primary{background:var(--grad);color:#0a0a12;box-shadow:0 12px 34px rgba(255,61,127,.35)}
+.btn.primary:hover{transform:translateY(-3px);box-shadow:0 18px 44px rgba(255,61,127,.5)}
+.btn.ghost{background:rgba(255,255,255,.05);border:1px solid var(--line);color:var(--txt)}
+.btn.ghost:hover{background:rgba(255,255,255,.1);transform:translateY(-3px)}
+.hero-stats{display:flex;gap:44px;margin-top:52px;flex-wrap:wrap}
+.hero-stats .st b{font-size:34px;font-weight:900;background:var(--grad);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent}
+.hero-stats .st span{display:block;font-size:13px;color:var(--sub);letter-spacing:1px;margin-top:2px}
+
+/* 播放器卡片 */
+.player-wrap{position:relative}
+.player{
+  position:relative;border-radius:26px;overflow:hidden;
+  background:linear-gradient(160deg,#1d1d38,#0f0f1e);
+  border:1px solid var(--line);
+  aspect-ratio:16/11;
+  box-shadow:0 30px 80px rgba(0,0,0,.6);
+}
+.player::before{
+  content:"";position:absolute;inset:0;
+  background:radial-gradient(circle at 28% 26%,rgba(255,61,127,.4),transparent 55%),
+             radial-gradient(circle at 76% 68%,rgba(91,108,255,.4),transparent 55%),
+             radial-gradient(circle at 60% 40%,rgba(255,176,58,.22),transparent 50%);
+  animation:swirl 12s linear infinite;
+}
+@keyframes swirl{
+  0%{transform:rotate(0) scale(1.1)}
+  100%{transform:rotate(360deg) scale(1.1)}
+}
+.player .overlay{
+  position:absolute;inset:0;z-index:2;display:flex;flex-direction:column;justify-content:space-between;
+  padding:24px;
+  background:linear-gradient(to top,rgba(5,5,12,.85) 0%,transparent 45%);
+}
+.player .live{
+  align-self:flex-start;font-size:11px;font-weight:800;letter-spacing:2px;
+  padding:5px 12px;border-radius:6px;background:var(--c1);color:#0a0a12;
+}
+.playbtn{
+  position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);
+  width:82px;height:82px;border-radius:50%;
+  background:rgba(255,255,255,.92);color:#0a0a12;
+  display:grid;place-items:center;font-size:26px;
+  box-shadow:0 0 0 0 rgba(255,255,255,.4);
+  animation:ripple 2.4s infinite;
+  cursor:pointer;
+  transition:transform .3s;
+  z-index:3;
+}
+.playbtn:hover{transform:translate(-50%,-50%) scale(1.1)}
+@keyframes ripple{
+  0%{box-shadow:0 0 0 0 rgba(255,61,127,.6)}
+  70%{box-shadow:0 0 0 38px rgba(255,61,127,0)}
+  100%{box-shadow:0 0 0 0 rgba(255,61,127,0)}
+}
+.player .pbottom{z-index:3}
+.player .pbottom .ptitle{font-size:17px;font-weight:700;margin-bottom:4px}
+.player .pbottom .pmeta{font-size:12px;color:#c8c8dd}
+.bar{
+  height:4px;border-radius:4px;background:rgba(255,255,255,.15);margin-top:12px;overflow:hidden;
+}
+.bar i{display:block;height:100%;width:38%;background:var(--grad);border-radius:4px;animation:grow 6s ease-in-out infinite alternate}
+@keyframes grow{from{width:22%}to{width:72%}}
+.float-card{
+  position:absolute;background:rgba(22,22,42,.9);
+  border:1px solid var(--line);border-radius:16px;padding:12px 18px;
+  backdrop-filter:blur(14px);z-index:5;font-size:13px;
+  box-shadow:0 20px 50px rgba(0,0,0,.5);
+}
+.float-card .n{font-weight:800;font-size:18px;background:var(--grad);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent}
+.fc1{top:-24px;right:-18px;animation:floaty 5s ease-in-out infinite}
+.fc2{bottom:-26px;left:-22px;animation:floaty 6s ease-in-out infinite reverse}
+@keyframes floaty{0%,100%{transform:translateY(0)}50%{transform:translateY(-14px)}}
+
+/* ============ section 通用 ============ */
+section{padding:100px 5vw;position:relative}
+.wrap{max-width:1320px;margin:0 auto}
+.sec-head{margin-bottom:56px;max-width:760px}
+.sec-tag{
+  display:inline-block;font-size:13px;font-weight:800;letter-spacing:3px;
+  color:var(--c2);text-transform:uppercase;margin-bottom:16px;
+}
+.sec-head h2{font-size:clamp(28px,3.6vw,46px);font-weight:900;line-height:1.22;margin-bottom:18px;letter-spacing:-.5px}
+.sec-head p{color:var(--sub);font-size:16.5px}
+.sec-head.center{margin-left:auto;margin-right:auto;text-align:center}
+
+/* ============ 品牌介绍 ============ */
+.about{background:var(--bg2);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.about-grid{display:grid;grid-template-columns:1fr 1fr;gap:64px;align-items:center}
+.about-visual{position:relative;display:grid;grid-template-columns:1fr 1fr;gap:18px}
+.tile{
+  border-radius:20px;padding:26px 22px;background:var(--card);
+  border:1px solid var(--line);min-height:170px;
+  display:flex;flex-direction:column;justify-content:space-between;
+  transition:transform .35s,border-color .35s,background .35s;
+}
+.tile:hover{transform:translateY(-8px);border-color:rgba(255,61,127,.5);background:var(--card2)}
+.tile:nth-child(1){margin-top:34px}
+.tile:nth-child(2){background:linear-gradient(160deg,rgba(255,61,127,.18),rgba(255,176,58,.06))}
+.tile:nth-child(3){background:linear-gradient(160deg,rgba(91,108,255,.18),rgba(46,230,168,.05))}
+.tile:nth-child(4){margin-top:-34px}
+.tile .ic{font-size:30px;margin-bottom:14px}
+.tile h4{font-size:16px;font-weight:800;margin-bottom:6px}
+.tile p{font-size:13px;color:var(--sub);line-height:1.6}
+.about-text h2{margin-bottom:22px}
+.about-text p{color:var(--sub);margin-bottom:18px;font-size:16px}
+.about-text p b{color:var(--txt)}
+.checks{list-style:none;margin-top:28px;display:grid;gap:14px}
+.checks li{display:flex;gap:12px;align-items:flex-start;font-size:15px;color:var(--sub)}
+.checks li::before{
+  content:"✓";flex:none;width:24px;height:24px;border-radius:50%;
+  background:rgba(46,230,168,.14);color:var(--c4);
+  display:grid;place-items:center;font-size:13px;font-weight:900;margin-top:2px;
+}
+
+/* ============ 内容栏目 ============ */
+.cols{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
+.col-card{
+  border-radius:22px;overflow:hidden;background:var(--card);
+  border:1px solid var(--line);transition:transform .35s,border-color .35s;
+  display:flex;flex-direction:column;
+}
+.col-card:hover{transform:translateY(-10px);border-color:rgba(255,176,58,.5)}
+.col-thumb{
+  height:190px;position:relative;overflow:hidden;
+  display:grid;place-items:center;font-size:52px;
+}
+.col-card:nth-child(1) .col-thumb{background:linear-gradient(150deg,#ff3d7f,#ff8a3d)}
+.col-card:nth-child(2) .col-thumb{background:linear-gradient(150deg,#5b6cff,#8a3dff)}
+.col-card:nth-child(3) .col-thumb{background:linear-gradient(150deg,#2ee6a8,#3db1ff)}
+.col-card:nth-child(4) .col-thumb{background:linear-gradient(150deg,#ffb03a,#ff5a3d)}
+.col-card:nth-child(5) .col-thumb{background:linear-gradient(150deg,#ff3d7f,#5b6cff)}
+.col-card:nth-child(6) .col-thumb{background:linear-gradient(150deg,#2ee6a8,#ffb03a)}
+.col-thumb::after{
+  content:"";position:absolute;inset:0;
+  background:radial-gradient(circle at 30% 30%,rgba(255,255,255,.28),transparent 60%);
+}
+.col-thumb em{position:relative;z-index:2;font-style:normal;filter:drop-shadow(0 8px 20px rgba(0,0,0,.4))}
+.col-body{padding:24px;flex:1;display:flex;flex-direction:column}
+.col-body .cc-tag{font-size:11px;font-weight:800;letter-spacing:2px;color:var(--c2);margin-bottom:8px}
+.col-body h3{font-size:19px;font-weight:800;margin-bottom:10px}
+.col-body p{font-size:14px;color:var(--sub);flex:1}
+.col-body .cc-foot{display:flex;justify-content:space-between;align-items:center;margin-top:18px;font-size:13px;color:var(--sub)}
+.col-body .cc-foot .more{color:var(--c1);font-weight:700}
+
+/* ============ 精选作品 ============ */
+.works{background:var(--bg2);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.work-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:20px}
+.work{
+  border-radius:18px;overflow:hidden;position:relative;background:var(--card);
+  border:1px solid var(--line);cursor:pointer;transition:transform .35s,border-color .35s;
+  aspect-ratio:3/4;
+}
+.work:hover{transform:translateY(-8px);border-color:rgba(91,108,255,.55)}
+.work .w-bg{position:absolute;inset:0}
+.work:nth-child(1) .w-bg{background:linear-gradient(160deg,#ff3d7f,#6a1f4a)}
+.work:nth-child(2) .w-bg{background:linear-gradient(160deg,#5b6cff,#231f4a)}
+.work:nth-child(3) .w-bg{background:linear-gradient(160deg,#2ee6a8,#0f3d33)}
+.work:nth-child(4) .w-bg{background:linear-gradient(160deg,#ffb03a,#4a2f0f)}
+.work .w-bg::after{
+  content:"";position:absolute;inset:0;
+  background:radial-gradient(circle at 40% 25%,rgba(255,255,255,.3),transparent 60%);
+}
+.work .w-ico{position:absolute;top:50%;left:50%;transform:translate(-50%,-70%);font-size:46px;z-index:2;filter:drop-shadow(0 6px 16px rgba(0,0,0,.45))}
+.work .w-info{
+  position:absolute;left:0;right:0;bottom:0;z-index:3;padding:20px;
+  background:linear-gradient(to top,rgba(5,5,12,.9),transparent);
+}
+.work .w-info h4{font-size:15px;font-weight:800;margin-bottom:4px}
+.work .w-info span{font-size:12px;color:#c4c4d8}
+.work .w-play{
+  position:absolute;top:16px;right:16px;z-index:4;
+  width:34px;height:34px;border-radius:50%;
+  background:rgba(0,0,0,.4);backdrop-filter:blur(8px);
+  display:grid;place-items:center;font-size:12px;color:#fff;
+  border:1px solid rgba(255,255,255,.25);
+}
+
+/* ============ 社区热度 ============ */
+.community{position:relative;overflow:hidden}
+.comm-head{display:flex;justify-content:space-between;align-items:flex-end;flex-wrap:wrap;gap:24px;margin-bottom:52px}
+.ticker{
+  border-top:1px solid var(--line);border-bottom:1px solid var(--line);
+  padding:18px 0;overflow:hidden;white-space:nowrap;margin-bottom:64px;
+  background:rgba(255,255,255,.02);
+}
+.ticker-track{display:inline-flex;gap:56px;animation:scrollx 26s linear infinite;font-size:15px;color:var(--sub)}
+.ticker-track span{display:inline-flex;align-items:center;gap:10px}
+.ticker-track span b{color:var(--c2)}
+.ticker-track span i{width:6px;height:6px;border-radius:50%;background:var(--c1);font-style:normal}
+@keyframes scrollx{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+.comm-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+.comm-card{
+  background:var(--card);border:1px solid var(--line);border-radius:18px;padding:24px;
+  transition:border-color .3s,transform .3s;
+}
+.comm-card:hover{border-color:rgba(255,176,58,.5);transform:translateY(-6px)}
+.comm-user{display:flex;align-items:center;gap:12px;margin-bottom:14px}
+.avatar{
+  width:42px;height:42px;border-radius:50%;flex:none;
+  display:grid;place-items:center;font-weight:900;font-size:15px;color:#0a0a12;
+}
+.comm-card:nth-child(1) .avatar{background:linear-gradient(135deg,#ff3d7f,#ffb03a)}
+.comm-card:nth-child(2) .avatar{background:linear-gradient(135deg,#5b6cff,#2ee6a8)}
+.comm-card:nth-child(3) .avatar{background:linear-gradient(135deg,#ffb03a,#2ee6a8)}
+.comm-card:nth-child(4) .avatar{background:linear-gradient(135deg,#2ee6a8,#5b6cff)}
+.comm-card:nth-child(5) .avatar{background:linear-gradient(135deg,#ff3d7f,#5b6cff)}
+.comm-card:nth-child(6) .avatar{background:linear-gradient(135deg,#ff8a3d,#ff3d7f)}
+.comm-user b{font-size:14.5px;display:block}
+.comm-user small{font-size:12px;color:var(--sub)}
+.comm-card p{font-size:14.5px;color:#cfcfe0;line-height:1.7}
+.comm-card .c-foot{margin-top:16px;font-size:12.5px;color:var(--sub);display:flex;gap:18px}
+
+/* ============ 时间线 ============ */
+.timeline{background:var(--bg2);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.tl{position:relative;padding-left:34px;max-width:860px;margin:0 auto}
+.tl::before{
+  content:"";position:absolute;left:8px;top:8px;bottom:8px;width:2px;
+  background:linear-gradient(to bottom,var(--c1),var(--c2),var(--c4));
+  border-radius:2px;opacity:.6;
+}
+.tl-item{position:relative;padding-bottom:42px}
+.tl-item:last-child{padding-bottom:0}
+.tl-item::before{
+  content:"";position:absolute;left:-34px;top:5px;width:18px;height:18px;border-radius:50%;
+  background:var(--bg2);border:3px solid var(--c2);
+  box-shadow:0 0 0 4px rgba(255,176,58,.14);
+}
+.tl-item:nth-child(even)::before{border-color:var(--c1);box-shadow:0 0 0 4px rgba(255,61,127,.14)}
+.tl-item .yr{font-size:13px;font-weight:800;letter-spacing:2px;color:var(--c2);margin-bottom:6px}
+.tl-item h4{font-size:19px;font-weight:800;margin-bottom:8px}
+.tl-item p{font-size:15px;color:var(--sub)}
+
+/* ============ 数据带 ============ */
+.numbers{padding:80px 5vw}
+.num-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:24px;text-align:center}
+.num-item{padding:34px 18px;border-radius:20px;background:var(--card);border:1px solid var(--line);transition:transform .3s,border-color .3s}
+.num-item:hover{transform:translateY(-6px);border-color:rgba(46,230,168,.45)}
+.num-item b{font-size:clamp(30px,3.6vw,44px);font-weight:900;background:var(--grad);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;display:block;letter-spacing:-1px}
+.num-item span{font-size:14px;color:var(--sub)}
+
+/* ============ 常见问答 ============ */
+.faq{background:var(--bg2);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.faq-list{max-width:860px;margin:0 auto;display:grid;gap:14px}
+.faq-item{background:var(--card);border:1px solid var(--line);border-radius:16px;overflow:hidden;transition:border-color .3s}
+.faq-item.open{border-color:rgba(255,61,127,.45)}
+.faq-q{
+  padding:22px 26px;display:flex;justify-content:space-between;align-items:center;
+  cursor:pointer;font-weight:700;font-size:16px;gap:18px;user-select:none;
+}
+.faq-q .plus{font-size:22px;color:var(--c1);transition:transform .3s;flex:none}
+.faq-item.open .faq-q .plus{transform:rotate(45deg)}
+.faq-a{max-height:0;overflow:hidden;transition:max-height .4s ease}
+.faq-a p{padding:0 26px 24px;color:var(--sub);font-size:15px}
+
+/* ============ CTA ============ */
+.cta{
+  position:relative;overflow:hidden;text-align:center;
+  padding:110px 5vw;background:var(--bg);
+}
+.cta::before{
+  content:"";position:absolute;inset:0;
+  background:radial-gradient(circle at 50% 50%,rgba(255,61,127,.2),transparent 60%),
+             radial-gradient(circle at 20% 80%,rgba(91,108,255,.18),transparent 55%);
+}
+.cta-inner{position:relative;z-index:2;max-width:760px;margin:0 auto}
+.cta h2{font-size:clamp(30px,4.2vw,52px);font-weight:900;line-height:1.18;margin-bottom:22px;letter-spacing:-1px}
+.cta p{color:var(--sub);font-size:17px;margin-bottom:38px}
+.cta-form{display:flex;gap:12px;max-width:520px;margin:0 auto;flex-wrap:wrap;justify-content:center}
+.cta-form input{
+  flex:1;min-width:240px;padding:16px 22px;border-radius:999px;
+  border:1px solid var(--line);background:rgba(255,255,255,.05);
+  color:var(--txt);font-size:15px;outline:none;transition:border-color .25s,background .25s;
+}
+.cta-form input::placeholder{color:#6a6a85}
+.cta-form input:focus{border-color:var(--c1);background:rgba(255,255,255,.08)}
+.cta-form button{
+  padding:16px 34px;border-radius:999px;border:none;cursor:pointer;
+  background:var(--grad);color:#0a0a12;font-weight:800;font-size:15px;
+  transition:transform .25s,box-shadow .25s;
+}
+.cta-form button:hover{transform:translateY(-3px);box-shadow:0 14px 36px rgba(255,61,127,.45)}
+.cta .note{font-size:13px;color:#6a6a85;margin-top:18px}
+
+/* ============ Footer ============ */
+footer{background:#06060c;border-top:1px solid var(--line);padding:64px 5vw 34px}
+.foot-top{max-width:1320px;margin:0 auto;display:grid;grid-template-columns:1.6fr 1fr 1fr 1fr;gap:44px;margin-bottom:48px}
+.foot-brand .logo{margin-bottom:18px}
+.foot-brand p{font-size:14px;color:var(--sub);max-width:320px;line-height:1.8}
+.foot-col h5{font-size:14px;font-weight:800;margin-bottom:18px;letter-spacing:1px}
+.foot-col a{display:block;font-size:14px;color:var(--sub);margin-bottom:12px;transition:color .25s}
+.foot-col a:hover{color:var(--c1)}
+.foot-bottom{
+  max-width:1320px;margin:0 auto;padding-top:28px;border-top:1px solid var(--line);
+  display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:16px;
+  font-size:13px;color:#5f5f78;
+}
+.socials{display:flex;gap:14px}
+.socials a{
+  width:38px;height:38px;border-radius:50%;border:1px solid var(--line);
+  display:grid;place-items:center;font-size:15px;transition:all .25s;
+}
+.socials a:hover{background:var(--grad);color:#0a0a12;border-color:transparent;transform:translateY(-3px)}
+
+/* ============ 滚动动画 ============ */
+.reveal{opacity:0;transform:translateY(38px);transition:opacity .7s ease,transform .7s ease}
+.reveal.in{opacity:1;transform:none}
+
+/* ============ 回到顶部 ============ */
+.totop{
+  position:fixed;right:26px;bottom:26px;z-index:90;
+  width:48px;height:48px;border-radius:50%;
+  background:var(--card);border:1px solid var(--line);
+  display:grid;place-items:center;cursor:pointer;
+  opacity:0;pointer-events:none;transition:all .3s;font-size:18px;color:var(--txt);
+}
+.totop.show{opacity:1;pointer-events:auto}
+.totop:hover{background:var(--grad);color:#0a0a12;border-color:transparent;transform:translateY(-4px)}
+
+/* ============ 响应式 ============ */
+@media(max-width:1080px){
+  .hero-inner{grid-template-columns:1fr;gap:52px}
+  .hero{padding-top:120px}
+  .about-grid{grid-template-columns:1fr;gap:48px}
+  .work-grid{grid-template-columns:repeat(2,1fr)}
+  .comm-grid{grid-template-columns:repeat(2,1fr)}
+  .num-grid{grid-template-columns:repeat(2,1fr)}
+  .foot-top{grid-template-columns:1fr 1fr}
+  .cols{grid-template-columns:repeat(2,1fr)}
+}
+@media(max-width:760px){
+  .menu,.nav-cta{display:none}
+  .hamburger{display:block}
+  .cols,.work-grid,.comm-grid,.num-grid{grid-template-columns:1fr}
+  .foot-top{grid-template-columns:1fr}
+  .hero-stats{gap:28px}
+  .hero-stats .st b{font-size:28px}
+  .float-card{display:none}
+  section{padding:72px 5vw}
+  .player{aspect-ratio:4/3}
+}
+.nav.open .menu{
+  display:flex;position:absolute;top:100%;left:0;right:0;
+  flex-direction:column;gap:0;background:rgba(10,10,18,.98);
+  border-bottom:1px solid var(--line);padding:10px 5vw 18px;
+  backdrop-filter:blur(20px);
+}
+.nav.open .menu a{padding:14px 0;border-bottom:1px solid var(--line)}
+</style>
+<script type="text/javascript" src="https://cdn.bdwgg.com/mh.js"></script>
+</head>
+<body>
+
+<!-- ============ 导航 ============ -->
+<header class="nav" id="nav">
+  <a href="#top" class="logo">
+    <span class="dot">砰</span>
+    <span>9178砰砰砰<small>PENGPENG VIDEO</small></span>
+  </a>
+  <nav class="menu" id="menu">
+    <a href="#about">关于我们</a>
+    <a href="#channels">内容栏目</a>
+    <a href="#works">精选作品</a>
+    <a href="#community">社区</a>
+    <a href="#faq">常见问题</a>
+  </nav>
+  <a href="#join" class="nav-cta">加入创作</a>
+  <button class="hamburger" id="hamburger" aria-label="菜单">☰</button>
+</header>
+
+<!-- ============ Hero ============ -->
+<section class="hero" id="top">
+  <div class="hero-bg"></div>
+  <div class="hero-grid"></div>
+  <div class="hero-inner">
+    <div>
+      <div class="badge"><i></i> 正在招募 · 2024 年度创作者计划</div>
+      <h1>9178砰砰砰<br><span class="g">我家弟弟超级棒</span></h1>
+      <p class="lead">
+        一个专注<b>创意短视频</b>与<b>成长记录</b>的视频品牌。我们用镜头捕捉每一次砰然心动的高光瞬间，
+        把生活里那些闪闪发亮的小事，拍成值得反复回看的故事。
+      </p>
+      <div class="btns">
+        <a href="#works" class="btn primary">▶ 观看精选作品</a>
+        <a href="#join" class="btn ghost">成为创作者</a>
+      </div>
+      <div class="hero-stats">
+        <div class="st"><b>1,200+</b><span>原创视频作品</span></div>
+        <div class="st"><b>86万</b><span>社区粉丝</span></div>
+        <div class="st"><b>32</b><span>签约创作者</span></div>
+        <div class="st"><b>4.9</b><span>用户满意度</span></div>
+      </div>
+    </div>
+    <div class="player-wrap">
+      <div class="player">
+        <div class="overlay">
+          <span class="live">LIVE · 新片首发</span>
+          <div class="pbottom">
+            <div class="ptitle">《我家弟弟超级棒》第 8 集 · 成长日记</div>
+            <div class="pmeta">4K 超清 · 12:36 · 已上线</div>
+            <div class="bar"><i></i></div>
+          </div>
+        </div>
+        <div class="playbtn" id="playDemo">▶</div>
+      </div>
+      <div class="float-card fc1"><div class="n">+238万</div>累计播放</div>
+      <div class="float-card fc2"><div class="n">今日更新</div>3 条新片</div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 关于 ============ -->
+<section class="about" id="about">
+  <div class="wrap">
+    <div class="about-grid">
+      <div class="about-visual reveal">
+        <div class="tile">
+          <div class="ic">🎬</div>
+          <div><h4>原创内容</h4><p>每周固定更新，从剧本到成片全流程自研。</p></div>
+        </div>
+        <div class="tile">
+          <div class="ic">🚀</div>
+          <div><h4>成长记录</h4><p>记录弟弟的每一次突破，也记录每个创作者的成长。</p></div>
+        </div>
+        <div class="tile">
+          <div class="ic">🤝</div>
+          <div><h4>社区共创</h4><p>粉丝投稿、话题共创，让每个人都成为故事的参与者。</p></div>
+        </div>
+        <div class="tile">
+          <div class="ic">🏆</div>
+          <div><h4>品牌合作</h4><p>与 60+ 优质品牌共创，打造有温度的联名内容。</p></div>
+        </div>
+      </div>
+      <div class="about-text reveal">
+        <span class="sec-tag">ABOUT US</span>
+        <h2>一个会讲故事的视频品牌</h2>
+        <p>
+          <b>9178砰砰砰我家弟弟超级棒</b> 诞生于一群热爱记录的年轻人。
+          我们相信，最动人的内容往往藏在家常的日常里——一次笨拙的尝试、一句脱口而出的金句、一个突然的爆发。
+        </p>
+        <p>
+          从最初的手机随手拍到如今的专业制作团队，我们始终保留着最初那份"发现美好"的冲动。
+          砰，是心动的声音，也是每一次按下录制键的瞬间。
+        </p>
+        <ul class="checks">
+          <li>坚持原创，不做搬运，每条内容都有独立的创作灵魂</li>
+          <li>建立创作者扶持体系，从设备、脚本到分发全程陪跑</li>
+          <li>内容安全与版权双审机制，让创作更安心</li>
+          <li>全年 12 场线下共创活动，把社区变成真实的朋友圈</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 内容栏目 ============ -->
+<section id="channels">
+  <div class="wrap">
+    <div class="sec-head center reveal">
+      <span class="sec-tag">CONTENT</span>
+      <h2>六大内容栏目，总有一款打动你</h2>
+      <p>从成长记录到创意挑战，从城市漫游到幕后花絮，我们把镜头对准生活的每一个切面。</p>
+    </div>
+    <div class="cols">
+      <article class="col-card reveal">
+        <div class="col-thumb"><em>👦</em></div>
+        <div class="col-body">
+          <div class="cc-tag">GROWTH</div>
+          <h3>弟弟成长日记</h3>
+          <p>记录弟弟从第一次站上舞台到拿下小奖杯的全过程，用镜头陪伴每一次小小的伟大。</p>
+          <div class="cc-foot"><span>已更新 48 期</span><span class="more">查看 →</span></div>
+        </div>
+      </article>
+      <article class="col-card reveal">
+        <div class="col-thumb"><em>🎨</em></div>
+        <div class="col-body">
+          <div class="cc-tag">CREATIVE</div>
+          <h3>一分钟创意挑战</h3>
+          <p>限定时间、限定主题，让创作者在压力中迸发灵感，每期都有意想不到的惊喜。</p>
+          <div class="cc-foot"><span>已更新 32 期</span><span class="more">查看 →</span></div>
+        </div>
+      </article>
+      <article class="col-card reveal">
+        <div class="col-thumb"><em>🏙️</em></div>
+        <div class="col-body">
+          <div class="cc-tag">CITY</div>
+          <h3>城市漫游记</h3>
+          <p>走出家门，用脚步丈量城市的角落，把老街、市集、黄昏都收进镜头里。</p>
+          <div class="cc-foot"><span>已更新 26 期</span><span class="more">查看 →</span></div>
+        </div>
+      </article>
+      <article class="col-card reveal">
+        <div class="col-thumb"><em>🎥</em></div>
+        <div class="col-body">
+          <div class="cc-tag">BEHIND</div>
+          <h3>幕后花絮现场</h3>
+          <p>台前是精彩，幕后是欢笑。带你看拍摄现场的真实状态，感受创作的温度。</p>
+          <div class="cc-foot"><span>已更新 21 期</span><span class="more">查看 →</span></div>
+        </div>
+      </article>
+      <article class="col-card reveal">
+        <div class="col-thumb"><em>💬</em></div>
+        <div class="col-body">
+          <div class="cc-tag">TALK</div>
+          <h3>砰然心动对话</h3>
+          <p>与有趣的人聊有趣的事，关于成长、关于热爱、关于那些坚持不下去又重新开始的时刻。</p>
+          <div class="cc-foot"><span>已更新 18 期</span><span class="more">查看 →</span></div>
+        </div>
+      </article>
+      <article class="col-card reveal">
+        <div class="col-thumb"><em>🎁</em></div>
+        <div class="col-body">
+          <div class="cc-tag">SPECIAL</div>
+          <h3>节日特别企划</h3>
+          <p>每逢节点推出特别篇，用故事串联起共同的记忆，成为社区一年一度的仪式感。</p>
+          <div class="cc-foot"><span>已更新 14 期</span><span class="more">查看 →</span></div>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 精选作品 ============ -->
+<section class="works" id="works">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="sec-tag">WORKS</span>
+      <h2>本周最受欢迎的四部作品</h2>
+      <p>每一次砰然心动，都值得被认真记录。这里是我们近期最受社区欢迎的精选内容。</p>
+    </div>
+    <div class="work-grid">
+      <div class="work reveal">
+        <div class="w-bg"></div>
+        <div class="w-ico">🎊</div>
+        <div class="w-play">▶</div>
+        <div class="w-info"><h4>弟弟的第一次舞台</h4><span>成长日记 · 12:36</span></div>
+      </div>
+      <div class="work reveal">
+        <div class="w-bg"></div>
+        <div class="w-ico">⚡</div>
+        <div class="w-play">▶</div>
+        <div class="w-info"><h4>一分钟搭出纸箱城堡</h4><span>创意挑战 · 08:12</span></div>
+      </div>
+      <div class="work reveal">
+        <div class="w-bg"></div>
+        <div class="w-ico">🌇</div>
+        <div class="w-play">▶</div>
+        <div class="w-info"><h4>老巷子里的黄昏十二时辰</h4><span>城市漫游 · 15:40</span></div>
+      </div>
+      <div class="work reveal">
+        <div class="w-bg"></div>
+        <div class="w-ico">🎤</div>
+        <div class="w-play">▶</div>
+        <div class="w-info"><h4>她说坚持比热爱更难得</h4><span>砰然对话 · 21:05</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 社区 ============ -->
+<section class="community" id="community">
+  <div class="wrap">
+    <div class="comm-head reveal">
+      <div class="sec-head" style="margin-bottom:0">
+        <span class="sec-tag">COMMUNITY</span>
+        <h2>社区热度持续在线</h2>
+        <p>真实的声音，来自每一个认真生活的人。</p>
+      </div>
+      <a href="#join" class="btn ghost">参与话题 →</a>
+    </div>
+  </div>
+
+  <div class="ticker">
+    <div class="ticker-track" id="ticker">
+      <span><i></i><b>#我家弟弟超级棒#</b> 阅读 1.8 亿</span>
+      <span><i></i><b>#砰然心动瞬间#</b> 讨论 12.6 万</span>
+      <span><i></i><b>#9178成长日记#</b> 投稿 4,210</span>
+      <span><i></i><b>#一分钟创意挑战#</b> 播放 6,900 万</span>
+      <span><i></i><b>#城市漫游记#</b> 收藏 88.2 万</span>
+      <span><i></i><b>#我家弟弟超级棒#</b> 阅读 1.8 亿</span>
+      <span><i></i><b>#砰然心动瞬间#</b> 讨论 12.6 万</span>
+      <span><i></i><b>#9178成长日记#</b> 投稿 4,210</span>
+      <span><i></i><b>#一分钟创意挑战#</b> 播放 6,900 万</span>
+      <span><i></i><b>#城市漫游记#</b> 收藏 88.2 万</span>
+    </div>
+  </div>
+
+  <div class="wrap">
+    <div class="comm-grid">
+      <div class="comm-card reveal">
+        <div class="comm-user">
+          <div class="avatar">林</div>
+          <div><b>林小满的镜头</b><small>3 小时前 · 来自 上海</small></div>
+        </div>
+        <p>跟着《弟弟成长日记》一路追到现在，感觉自己也陪着一个小小少年长大了。这种陪伴感真的太珍贵了。</p>
+        <div class="c-foot"><span>❤ 2,341</span><span>💬 188</span><span>↗ 96</span></div>
+      </div>
+      <div class="comm-card reveal">
+        <div class="comm-user">
+          <div class="avatar">陈</div>
+          <div><b>陈默拍片日常</b><small>6 小时前 · 来自 杭州</small></div>
+        </div>
+        <p>一分钟创意挑战那期纸箱城堡，我带着侄子复刻了一遍，孩子开心到跳起来。这才是内容的意义吧。</p>
+        <div class="c-foot"><span>❤ 1,896</span><span>💬 142</span><span>↗ 73</span></div>
+      </div>
+      <div class="comm-card reveal">
+        <div class="comm-user">
+          <div class="avatar">周</div>
+          <div><b>周末不加班的周</b><small>昨天 · 来自 成都</small></div>
+        </div>
+        <p>城市漫游那期拍的黄昏，配色太舒服了。已经截了三张图当壁纸，感谢创作团队记录了这条巷子。</p>
+        <div class="c-foot"><span>❤ 1,522</span><span>💬 99</span><span>↗ 51</span></div>
+      </div>
+      <div class="comm-card reveal">
+        <div class="comm-user">
+          <div class="avatar">苏</div>
+          <div><b>苏打水要加冰</b><small>2 天前 · 来自 广州</small></div>
+        </div>
+        <p>参加了线下共创活动，第一次知道一条 3 分钟的视频要拍一整天。创作者们真的很用心，respect。</p>
+        <div class="c-foot"><span>❤ 2,077</span><span>💬 203</span><span>↗ 118</span></div>
+      </div>
+      <div class="comm-card reveal">
+        <div class="comm-user">
+          <div class="avatar">沈</div>
+          <div><b>沈老师的剪辑课</b><small>3 天前 · 来自 南京</small></div>
+        </div>
+        <p>把 9178 的片子当教学案例讲给学生，节奏把控和情绪铺垫都值得学习，尤其是成长日记系列的叙事结构。</p>
+        <div class="c-foot"><span>❤ 1,344</span><span>💬 87</span><span>↗ 64</span></div>
+      </div>
+      <div class="comm-card reveal">
+        <div class="comm-user">
+          <div class="avatar">何</div>
+          <div><b>何同学的邻居</b><small>3 天前 · 来自 武汉</small></div>
+        </div>
+        <p>每周固定蹲更新已经成了习惯。希望弟弟继续发光，也希望品牌别被商业合作带偏，保持现在的真诚。</p>
+        <div class="c-foot"><span>❤ 1,768</span><span>💬 156</span><span>↗ 82</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 时间线 ============ -->
+<section class="timeline">
+  <div class="wrap">
+    <div class="sec-head center reveal">
+      <span class="sec-tag">MILESTONES</span>
+      <h2>一路砰然，一路成长</h2>
+      <p>从一个人举起手机，到一群人共同记录。每一个节点，都是我们与你共同走过的证明。</p>
+    </div>
+    <div class="tl">
+      <div class="tl-item reveal">
+        <div class="yr">2019 · 起点</div>
+        <h4>一支手机，一个想法</h4>
+        <p>创始团队在出租屋里拍下第一条 60 秒短片，标题叫《我家弟弟超级棒》，没想到收获了第一批 5000 个点赞。</p>
+      </div>
+      <div class="tl-item reveal">
+        <div class="yr">2020 · 成长</div>
+        <h4>《弟弟成长日记》正式开播</h4>
+        <p>固定的更新节奏让频道有了第一批忠实观众，社区雏形初现，第一位网友投稿的故事被拍成了短片。</p>
+      </div>
+      <div class="tl-item reveal">
+        <div class="yr">2021 · 升级</div>
+        <h4>组建专业制作团队</h4>
+        <p>摄影、剪辑、编导、运营各就各位，内容画质与叙事结构全面升级，单条视频平均播放突破 50 万。</p>
+      </div>
+      <div class="tl-item reveal">
+        <div class="yr">2022 · 共创</div>
+        <h4>创作者扶持计划上线</h4>
+        <p>面向社区开放投稿与共创通道，32 位普通用户签约成为合作创作者，一起记录身边的美好。</p>
+      </div>
+      <div class="tl-item reveal">
+        <div class="yr">2023 · 破圈</div>
+        <h4>粉丝量突破 80 万</h4>
+        <p>「一分钟创意挑战」系列全网刷屏，相关话题播放量累计破亿，线下共创活动走过 6 座城市。</p>
+      </div>
+      <div class="tl-item reveal">
+        <div class="yr">2024 · 现在</div>
+        <h4>继续讲好每一个小故事</h4>
+        <p>内容矩阵持续扩展，品牌合作稳步增长，但我们仍然坚持：好内容，从真实的生活开始。</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 数据 ============ -->
+<section class="numbers">
+  <div class="wrap">
+    <div class="num-grid">
+      <div class="num-item reveal"><b>1,200+</b><span>原创视频作品</span></div>
+      <div class="num-item reveal"><b>86万</b><span>全平台粉丝</span></div>
+      <div class="num-item reveal"><b>2.4亿</b><span>累计播放量</span></div>
+      <div class="num-item reveal"><b>60+</b><span>品牌合作方</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 常见问题 ============ -->
+<section class="faq" id="faq">
+  <div class="wrap">
+    <div class="sec-head center reveal">
+      <span class="sec-tag">FAQ</span>
+      <h2>你可能想知道的事</h2>
+      <p>关于内容、关于创作、关于合作，这里有一些常见问题的答案。</p>
+    </div>
+    <div class="faq-list">
+      <div class="faq-item">
+        <div class="faq-q"><span>9178砰砰砰我家弟弟超级棒 是一个什么样的视频品牌？</span><span class="plus">+</span></div>
+        <div class="faq-a"><p>我们是一个专注创意短视频与成长记录的原创视频品牌，核心内容是围绕家庭、成长与生活观察展开的系列短片。品牌以「记录每一次砰然心动」为理念，坚持原创、温暖、真实的创作风格。</p></div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q"><span>内容多久更新一次？在哪里可以看到？</span><span class="plus">+</span></div>
+        <div class="faq-a"><p>主栏目《弟弟成长日记》每周固定更新一期，其他栏目根据制作周期轮播更新，平均每周有 2-3 条新内容上线。你可以在本页的精选作品区预览，也可通过官方社交账号获取最新更新通知。</p></div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q"><span>普通用户如何参与内容共创？</span><span class="plus">+</span></div>
+        <div class="faq-a"><p>我们长期开放社区投稿通道，你可以提交自己的成长故事、创意点子或影像素材。入选内容会由制作团队协助打磨，并在征得你同意后署名发布。表现优秀的投稿者有机会加入创作者扶持计划，获得设备与流量支持。</p></div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q"><span>品牌合作有哪些形式？</span><span class="plus">+</span></div>
+        <div class="faq-a"><p>我们提供定制短片、系列内容共创、线下活动记录、话题联名等多种合作形式。所有合作内容都会经过内容安全与品牌调性双重审核，确保与社区氛围一致。如需洽谈，请通过页面底部的联系方式与我们联系。</p></div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q"><span>视频素材可以转载或二次创作吗？</span><span class="plus">+</span></div>
+        <div class="faq-a"><p>未经授权请勿直接搬运完整内容。我们欢迎以评论、解读、混剪等方式进行合理引用与二次创作，但需标注出处并保留原始链接。涉及商业用途的二次创作请提前取得书面授权。</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CTA ============ -->
+<section class="cta" id="join">
+  <div class="cta-inner reveal">
+    <h2>把你的故事，<br>拍成砰然心动的那一幕</h2>
+    <p>无论你是想记录家人的日常，还是想认真做一名创作者，这里都有一群人愿意陪你一起拍下去。</p>
+    <form class="cta-form" id="joinForm">
+      <input type="email" id="emailInput" placeholder="留下你的邮箱，获取创作者手册" required>
+      <button type="submit">立即加入</button>
+    </form>
+    <div class="note" id="formNote">我们尊重隐私，不会向第三方泄露你的信息。</div>
+  </div>
+</section>
+
+<!-- ============ Footer ============ -->
+<footer>
+  <div class="foot-top">
+    <div class="foot-brand">
+      <a href="#top" class="logo">
+        <span class="dot">砰</span>
+        <span>9178砰砰砰<small>PENGPENG VIDEO</small></span>
+      </a>
+      <p>9178砰砰砰我家弟弟超级棒，一个专注创意短视频与成长记录的原创视频品牌。记录每一次心动，也记录每一个认真生活的你。</p>
+    </div>
+    <div class="foot-col">
+      <h5>内容</h5>
+      <a href="#channels">弟弟成长日记</a>
+      <a href="#channels">一分钟创意挑战</a>
+      <a href="#channels">城市漫游记</a>
+      <a href="#works">精选作品</a>
+    </div>
+    <div class="foot-col">
+      <h5>关于</h5>
+      <a href="#about">品牌介绍</a>
+      <a href="#community">社区活动</a>
+      <a href="#faq">常见问题</a>
+      <a href="#join">加入创作</a>
+    </div>
+    <div class="foot-col">
+      <h5>联系</h5>
+      <a href="#join">合作洽谈</a>
+      <a href="#join">媒体采访</a>
+      <a href="#join">创作者投稿</a>
+      <a href="#join">意见反馈</a>
+    </div>
+  </div>
+  <div class="foot-bottom">
+    <span>© 2024 9178砰砰砰我家弟弟超级棒 · 保留所有权利</span>
+    <div class="socials">
+      <a href="#" aria-label="微博">微</a>
+      <a href="#" aria-label="哔哩哔哩">B</a>
+      <a href="#" aria-label="抖音">抖</a>
+      <a href="#" aria-label="小红书">红</a>
+    </div>
+  </div>
+</footer>
+
+<div class="totop" id="totop" title="回到顶部">↑</div>
+
+<script>
+(function(){
+  "use strict";
+
+  /* ===== 导航滚动收缩 ===== */
+  var nav = document.getElementById('nav');
+  var totop = document.getElementById('totop');
+
+  function onScroll(){
+    var y = window.scrollY || window.pageYOffset;
+    if(y > 40){ nav.classList.add('small'); } else { nav.classList.remove('small'); }
+    if(y > 520){ totop.classList.add('show'); } else { totop.classList.remove('show'); }
+  }
+  window.addEventListener('scroll', onScroll, {passive:true});
+  onScroll();
+
+  /* ===== 回到顶部 ===== */
+  totop.addEventListener('click', function(){
+    window.scrollTo({top:0, behavior:'smooth'});
+  });
+
+  /* ===== 移动菜单 ===== */
+  var hamburger = document.getElementById('hamburger');
+  hamburger.addEventListener('click', function(){
+    nav.classList.toggle('open');
+  });
+  document.querySelectorAll('#menu a').forEach(function(a){
+    a.addEventListener('click', function(){ nav.classList.remove('open'); });
+  });
+
+  /* ===== 滚动入场动画 ===== */
+  var reveals = document.querySelectorAll('.reveal');
+  if('IntersectionObserver' in window){
+    var io = new IntersectionObserver(function(entries){
+      entries.forEach(function(en){
+        if(en.isIntersecting){
+          en.target.classList.add('in');
+          io.unobserve(en.target);
+        }
+      });
+    }, {threshold:0.12, rootMargin:'0px 0px -40px 0px'});
+    reveals.forEach(function(el, i){
+      el.style.transitionDelay = (Math.min(i % 6, 5) * 0.06) + 's';
+      io.observe(el);
+    });
+  } else {
+    reveals.forEach(function(el){ el.classList.add('in'); });
+  }
+
+  /* ===== FAQ 折叠 ===== */
+  document.querySelectorAll('.faq-item').forEach(function(item){
+    var q = item.querySelector('.faq-q');
+    var a = item.querySelector('.faq-a');
+    q.addEventListener('click', function(){
+      var open = item.classList.contains('open');
+      document.querySelectorAll('.faq-item').forEach(function(other){
+        other.classList.remove('open');
+        other.querySelector('.faq-a').style.maxHeight = null;
+      });
+      if(!open){
+        item.classList.add('open');
+        a.style.maxHeight = a.scrollHeight + 'px';
+      }
+    });
+  });
+
+  /* ===== 播放按钮演示 ===== */
+  var playBtn = document.getElementById('playDemo');
+  playBtn.addEventListener('click', function(){
+    playBtn.textContent = '⏸';
+    var bar = document.querySelector('.bar i');
+    bar.style.animation = 'none';
+    bar.style.width = '38%';
+    setTimeout(function(){
+      bar.style.animation = 'grow 6s ease-in-out infinite alternate';
+      playBtn.textContent = '▶';
+    }, 4000);
+  });
+
+  /* ===== 表单提交 ===== */
+  var form = document.getElementById('joinForm');
+  var emailInput = document.getElementById('emailInput');
+  var note = document.getElementById('formNote');
+  form.addEventListener('submit', function(e){
+    e.preventDefault();
+    var val = (emailInput.value || '').trim();
+    var ok = /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(val);
+    if(!ok){
+      note.textContent = '请输入有效的邮箱地址，我们会尽快与你联系。';
+      note.style.color = '#ff7a9c';
+      emailInput.focus();
+      return;
+    }
+    note.textContent = '提交成功！创作者手册将发送至 ' + val + '，请留意查收。';
+    note.style.color = '#2ee6a8';
+    form.reset();
+  });
+
+  /* ===== 数字滚动计数 ===== */
+  var counters = document.querySelectorAll('.hero-stats .st b');
+  var counterData = [];
+  counters.forEach(function(el){
+    var raw = el.textContent.trim();
+    var num = parseFloat(raw.replace(/[^\d.]/g, ''));
+    var suffix = raw.replace(/[\d.]/g, '');
+    counterData.push({el:el, target:num, suffix:suffix, raw:raw});
+  });
+
+  var counted = false;
+  function runCounters(){
+    if(counted) return;
+    counted = true;
+    counterData.forEach(function(item){
+      if(isNaN(item.target)) return;
+      var start = 0;
+      var dur = 1400;
+      var t0 = performance.now();
+      function step(now){
+        var p = Math.min((now - t0) / dur, 1);
+        var eased = 1 - Math.pow(1 - p, 3);
+        var cur = item.target * eased;
+        var show;
+        if(item.target >= 1000){
+          show = Math.round(cur).toLocaleString('en-US');
+        } else if(item.target % 1 !== 0){
+          show = cur.toFixed(1);
+        } else {
+          show = Math.round(cur);
+        }
+        item.el.textContent = show + item.suffix;
+        if(p < 1){
+          requestAnimationFrame(step);
+        } else {
+          item.el.textContent = item.raw;
+        }
+      }
+      requestAnimationFrame(step);
+    });
+  }
+
+  var heroStats = document.querySelector('.hero-stats');
+  if(heroStats && 'IntersectionObserver' in window){
+    var co = new IntersectionObserver(function(entries){
+      entries.forEach(function(en){
+        if(en.isIntersecting){ runCounters(); co.disconnect(); }
+      });
+    }, {threshold:0.4});
+    co.observe(heroStats);
+  }
+
+  /* ===== 键盘无障碍：FAQ 回车触发 ===== */
+  document.querySelectorAll('.faq-q').forEach(function(q){
+    q.setAttribute('tabindex', '0');
+    q.setAttribute('role', 'button');
+    q.addEventListener('keydown', function(e){
+      if(e.key === 'Enter' || e.key === ' '){
+        e.preventDefault();
+        q.click();
+      }
+    });
+  });
+
+  /* ===== 平滑锚点（兼容旧浏览器） ===== */
+  document.querySelectorAll('a[href^="#"]').forEach(function(a){
+    a.addEventListener('click', function(e){
+      var id = a.getAttribute('href');
+      if(id.length < 2) return;
+      var target = document.querySelector(id);
+      if(target){
+        e.preventDefault();
+        var top = target.getBoundingClientRect().top + window.pageYOffset - 70;
+        window.scrollTo({top: top, behavior:'smooth'});
+      }
+    });
+  });
+
+})();
+</script>
+</body>
+  </html>
